@@ -2,7 +2,7 @@ data = list(map(float, open("data/numbers.txt")))
 
 print("Data loaded")
 
-avg = sum(data) / len(data)
+avg = sum(data) / len(data) + 0.01
 
 fmodel = open("result/model.txt", "w")
 print(avg, file=fmodel)
